@@ -708,14 +708,14 @@ D^{(3D)}:= \sum_{i=1}^{N-1} d_i^{(3D)}.
 <span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(archivo_salida)</span>
 <span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>display(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div id="tbl-distancias" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="1" data-quarto-html-table-processing="none">
+<div id="tbl-distancias" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-quarto-html-table-processing="none" data-execution_count="1">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-distancias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;4.1: Distancias de carreteras en Chiapas (3D)
 </figcaption>
 <div aria-describedby="tbl-distancias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <!--| quarto-html-table-processing: none -->
-<table id="itables_961e3d81_aa30_4be3_abe8_57aa8c4ad194"><tbody><tr>
+<table id="itables_900522d4_a345_4c67_ad15_b81936e0b199"><tbody><tr>
     <td style="vertical-align:middle; text-align:left">
     <a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
     <g style="fill:#d9d7fc">
@@ -781,11 +781,11 @@ Table&nbsp;4.1: Distancias de carreteras en Chiapas (3D)
 <script type="module">
     import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.3.3/dt_bundle.js';
 
-    document.querySelectorAll("#itables_961e3d81_aa30_4be3_abe8_57aa8c4ad194:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_900522d4_a345_4c67_ad15_b81936e0b199:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
-        let dt_args = {"dom": "Bfrtip", "buttons": ["copy", "csv", "excel"], "columnDefs": [{"width": "150px", "targets": "_all"}], "scrollCollapse": true, "layout": {"topStart": "buttons", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "autoWidth": false, "text_in_header_can_be_selected": true, "order": [], "style": {"table-layout": "auto", "width": "auto", "margin": "0", "caption-side": "bottom"}, "classes": ["table", "table-striped", "table-bordered", "table-hover", "nowrap"], "scrollX": true, "lengthMenu": [5, 25, 50], "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Origen</th>\n      <th>Destino</th>\n      <th>Distancia carretera (km)</th>\n      <th>Distancia 3D (km)</th>\n      <th>Diferencia (km)</th>\n      <th>Tiempo estimado (min)</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"Acacoyagua\", \"Acala\", 347.117, 347.897, 0.781, 285.2], [\"Acacoyagua\", \"Acapetahua\", 33.39, 33.553, 0.163, 58.0], [\"Acacoyagua\", \"Aldama\", 388.599, 390.342, 1.742, 335.0], [\"Acacoyagua\", \"Altamirano\", 350.59, 354.451, 3.861, 425.0], [\"Acacoyagua\", \"Amatenango de la Frontera\", 146.018, 149.417, 3.399, 151.1], [\"Acacoyagua\", \"Amatenango del Valle\", 301.39, 304.619, 3.229, 293.3], [\"Acacoyagua\", \"Amat\\u00e1n\", 480.531, 483.804, 3.273, 426.3], [\"Acacoyagua\", \"Arriaga\", 171.963, 172.217, 0.254, 138.3], [\"Acacoyagua\", \"Bejucal de Ocampo\", 144.439, 148.142, 3.703, 170.3], [\"Acacoyagua\", \"Bella Vista\", 179.142, 182.668, 3.526, 182.1]]"};
+        let dt_args = {"dom": "Bfrtip", "buttons": ["copy", "csv", "excel"], "columnDefs": [{"width": "150px", "targets": "_all"}], "scrollCollapse": true, "layout": {"topStart": "buttons", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "text_in_header_can_be_selected": true, "autoWidth": false, "scrollX": true, "lengthMenu": [5, 25, 50], "style": {"table-layout": "auto", "width": "auto", "margin": "0", "caption-side": "bottom"}, "order": [], "classes": ["table", "table-striped", "table-bordered", "table-hover", "nowrap"], "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      \n      <th>Origen</th>\n      <th>Destino</th>\n      <th>Distancia carretera (km)</th>\n      <th>Distancia 3D (km)</th>\n      <th>Diferencia (km)</th>\n      <th>Tiempo estimado (min)</th>\n    </tr>\n  </thead></table>", "data_json": "[[\"Acacoyagua\", \"Acala\", 347.117, 347.897, 0.781, 285.2], [\"Acacoyagua\", \"Acapetahua\", 33.39, 33.553, 0.163, 58.0], [\"Acacoyagua\", \"Aldama\", 388.599, 390.342, 1.742, 335.0], [\"Acacoyagua\", \"Altamirano\", 350.59, 354.451, 3.861, 425.0], [\"Acacoyagua\", \"Amatenango de la Frontera\", 146.018, 149.417, 3.399, 151.1], [\"Acacoyagua\", \"Amatenango del Valle\", 301.39, 304.619, 3.229, 293.3], [\"Acacoyagua\", \"Amat\\u00e1n\", 480.531, 483.804, 3.273, 426.3], [\"Acacoyagua\", \"Arriaga\", 171.963, 172.217, 0.254, 138.3], [\"Acacoyagua\", \"Bejucal de Ocampo\", 144.439, 148.142, 3.703, 170.3], [\"Acacoyagua\", \"Bella Vista\", 179.142, 182.668, 3.526, 182.1]]"};
         new ITable(table, dt_args);
     });
 </script>

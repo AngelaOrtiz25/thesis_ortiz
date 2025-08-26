@@ -444,7 +444,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="mapa-interactivo-con-folium" class="level1" data-number="7">
 <h1 data-number="7"><span class="header-section-number">7</span> Mapa interactivo con Folium</h1>
-<div id="7d2840dd" class="cell" data-execution_count="1">
+<div id="f339e8d0" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> folium</span>
@@ -464,7 +464,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 <div class="only-html">
-<div id="d38bb81e" class="cell" data-execution_count="2">
+<div id="45a31024" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> IPython</span>
@@ -490,7 +490,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_6f06d1ea0e30b430820588ddc6937c1b {
+                #map_17c40cba63ba27f80971b176969555e2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -527,14 +527,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_6f06d1ea0e30b430820588ddc6937c1b&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_17c40cba63ba27f80971b176969555e2&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_6f06d1ea0e30b430820588ddc6937c1b = L.map(
-                &quot;map_6f06d1ea0e30b430820588ddc6937c1b&quot;,
+            var map_17c40cba63ba27f80971b176969555e2 = L.map(
+                &quot;map_17c40cba63ba27f80971b176969555e2&quot;,
                 {
                     center: [16.7529, -93.1169],
                     crs: L.CRS.EPSG3857,
@@ -551,7 +551,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
         
     
-            var tile_layer_fe99fabba1bbb488fc4a34eacc559d77 = L.tileLayer(
+            var tile_layer_b7dc885e5a357f20ada2b10127f96aca = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -568,34 +568,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             );
         
     
-            tile_layer_fe99fabba1bbb488fc4a34eacc559d77.addTo(map_6f06d1ea0e30b430820588ddc6937c1b);
+            tile_layer_b7dc885e5a357f20ada2b10127f96aca.addTo(map_17c40cba63ba27f80971b176969555e2);
         
     
-            var marker_9db78e010dd16b6b953ccc35a165b427 = L.marker(
+            var marker_1735450b9074bca28e20b9d22df3e34b = L.marker(
                 [16.7529, -93.1169],
                 {
 }
-            ).addTo(map_6f06d1ea0e30b430820588ddc6937c1b);
+            ).addTo(map_17c40cba63ba27f80971b176969555e2);
         
     
-        var popup_151cc3d1a9305c66a3a402ec43f23057 = L.popup({
+        var popup_82cea23b7c21475dbff0589cff6443f1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_f1858544faa82046c47230ede41d24bf = $(`<div id=&quot;html_f1858544faa82046c47230ede41d24bf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Capital de Chiapas</div>`)[0];
-                popup_151cc3d1a9305c66a3a402ec43f23057.setContent(html_f1858544faa82046c47230ede41d24bf);
+                var html_6baccef87aa31994dde331fdfcf07c41 = $(`<div id=&quot;html_6baccef87aa31994dde331fdfcf07c41&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Capital de Chiapas</div>`)[0];
+                popup_82cea23b7c21475dbff0589cff6443f1.setContent(html_6baccef87aa31994dde331fdfcf07c41);
             
         
 
-        marker_9db78e010dd16b6b953ccc35a165b427.bindPopup(popup_151cc3d1a9305c66a3a402ec43f23057)
+        marker_1735450b9074bca28e20b9d22df3e34b.bindPopup(popup_82cea23b7c21475dbff0589cff6443f1)
         ;
 
         
     
     
-            marker_9db78e010dd16b6b953ccc35a165b427.bindTooltip(
+            marker_1735450b9074bca28e20b9d22df3e34b.bindTooltip(
                 `<div>
                      Tuxtla Gutiérrez
                  </div>`,
@@ -605,14 +605,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             );
         
     
-            tile_layer_fe99fabba1bbb488fc4a34eacc559d77.addTo(map_6f06d1ea0e30b430820588ddc6937c1b);
+            tile_layer_b7dc885e5a357f20ada2b10127f96aca.addTo(map_17c40cba63ba27f80971b176969555e2);
         
 </script>
 </html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
 </div>
 </div>
 </div>
-<div id="72207fb5" class="cell" data-execution_count="3">
+<div id="368874ab" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Captura del mapa como imagen PNG para incluir en PDF</span></span>
