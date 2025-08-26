@@ -1,0 +1,73 @@
+---
+title: "Mapa con Folium"
+format:
+  html: default
+  pdf: default
+jupyter: python3
+---
+
+# Mapa interactivo con Folium
+
+```{python}
+import folium
+
+# Crear el mapa centrado en Tuxtla Gutiérrez
+mapa = folium.Map(location=[16.7529, -93.1169], zoom_start=13)
+
+# Agregar un marcador
+folium.Marker(
+    [16.7529, -93.1169],
+    tooltip="Tuxtla Gutiérrez",
+    popup="Capital de Chiapas"
+).add_to(mapa)
+
+# Guardar el mapa como archivo HTML para Selenium
+mapa.save("mapa_folium.html")
+```
+:::{.only-html}
+```{python}
+import IPython
+IPython.display.display(mapa)
+```
+:::
+
+```{python}  
+# Captura del mapa como imagen PNG para incluir en PDF
+# Captura del mapa como imagen PNG para incluir en PDF
+import os
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from PIL import Image
+import time
+
+if not os.path.exists("mapa_folium.png"):
+    options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument("--window-size=800,600")
+
+    driver = webdriver.Chrome(options=options)
+
+    driver.get("file://" + os.path.abspath("mapa_folium.html"))
+    time.sleep(2)  # Esperar a que cargue el mapa
+
+    # Forzar fondo blanco (evita fondo negro)
+    driver.execute_script("document.body.style.background = 'white';")
+
+    # Intentar capturar el contenedor del mapa directamente
+    try:
+        map_element = driver.find_element("id", "map")
+        map_element.screenshot("mapa_folium.png")
+    except:
+        # Si no encuentra el ID, captura toda la pantalla y recorta
+        driver.save_screenshot("mapa_folium_full.png")
+        img = Image.open("mapa_folium_full.png")
+        crop = img.crop((0, 0, 800, 600))
+        crop.save("mapa_folium.png")
+
+    driver.quit()
+```   
+:::{.only-pdf}
+![Mapa generado con Folium](mapa_folium.png)
+:::

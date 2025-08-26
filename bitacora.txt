@@ -1,0 +1,364 @@
+BITÁCORA
+
+28 de marzo de 25
+---
+Aplicaciones de cadenas de Markov en PageRank
+ - Optimización de Rutas de Última Milla
+ 	-Descargar Datos de distancias Directions API
+
+01 de abril de 2025
+---
+- Se aplico PageRank con matrices de distancias/tiempos para calificar ciudades.
+
+PENDIENTE
+--Datos Adicionales Necesarios para Mejorar el Modelo
+    - Buscar información PIB
+    - Distancias reales
+    - Datos de economía de cada municipio
+    - Número de habitantes de cada municipio
+--una vez obtenidas las calificaciones de ciudades y colocar esta información en un mapa usando un software gratuito y mapas gratuitos.
+--Una vez completado lo anterior explorar la posibilidad de implementar el algoritmo ruta óptima en dos ciudades
+
+
+16-Mayo-2025
+---
+
+Resumen de lo que has hecho antes
+(describir la implementación del algoritmo de google rank para obtener las distancias entre municipios de chiapas)
+
+- parte 2: analizar la factibilidad ee usar drone como una alternativa para acceder alas comunidades. Justificar que  nofue posible obtener la estimación de las carreteras entre las cominudades. se propone la estimación de las distancias por latitud y longitud, lo qu permite pensar en el uso de drones para transporte.
+
+leer los dos trabajos para entender qué información adicional se requiere para hacer el estudio de factibilidad (justificar con variables climáticas si los drones pueden viajar) enfatizar en las herramientas estadísticas usadas en el proyecto de hidalgo.
+
+
+ 
+Encontre esta pagina de la Secretaria de transporte la cuál da algunos datos de las carreteras pavimentadas en el cual da datos de distancias de algunas carreteras que conectan a algunos municipios
+
+https://www.datos.gob.mx/organization/secretaria_comunicaciones
+
+
+Segundo trabajo
+Una de las cosas a considerar sobre los drones como medio de transporte son:
+ 	* normas internacionales de aviación y las normas vigentes frente a los vehículos no tripulados, OACI (Organización de Aviación Civil Internacional)
+ 	* mercancías los vehículos aéreos deben estar acondicionados para desempeñar dicha labor, dentro de lo que se encuentran una buena conexión y segura a 		internet, un sistema de geolocalización (GPS) (tener en cuenta que en muchos lugares de Chiapas no existe ni red telefónica)
+ 	* Cableado y postes de la zona si no están correctamente distribuidos o de foma organizada puede limitar el vuelo del dron
+ 	* Lugares de zonas verdes amplias y superficie sin edificicaciones es ventajoso
+ 	**tendrán en cuenta factores de infraestructura y diseño arquitectónico y la población por estrato socioeconómico.
+
+En México en 2025 requiere cumplir con normativas establecidas por la Agencia Federal de Aviación Civil (AFAC). Estas son las principales obligaciones:
+Registro obligatorio: todos los drones que pesen más de 250 gramos deben registrarse en línea a través del portal oficial de la AFAC. Es necesario proporcionar información técnica del equipo, como número de serie y características operativas;
+Certificación de piloto remoto: los operadores profesionales deben obtener una certificación que incluye un examen teórico y práctico;
+Seguro de responsabilidad civil: obligatorio para drones que pesen más de 2 kg;
+Límites de altura: la altitud máxima permitida es de 120 metros (400 pies) sobre el nivel del suelo;
+Restricciones de vuelo nocturno: prohibidos sin permiso especial de las autoridades correspondientes
+
+
+21 de mayo de 2025
+---
+
+* Reunirme con Romelia (INEGI) (PENDIENTE JUEVES 29)
+* Crear una solicitud de datos de distancia de carreteras entre municipios de Chiapas para usar el algoritmo de Google Rank y comparar con una alternativa de transporte que usa drones, con el fin de desarrollar una tesis de licenciatura en Matemáticas Aplicadas en la Facultad de Ciencias en Fisica y Matemáticas de UNACH, lo firmado de Ángela Yaneli Ortiz Díaz y visto bueno de director de Tesis Yofre Hernán García Gómez
+
+ 	Tuxtla Gutiérrez, Chiapas, a [fecha]
+
+ 	Asunto: Solicitud de información sobre distancias de carreteras entre municipios del estado de Chiapas
+
+ 	C. Titular de la Comisión de Caminos e Infraestructura Hidráulica
+ 	Gobierno del Estado de Chiapas
+ 	Presente
+
+ 	Por este medio, me permito saludarle cordialmente y, a la vez, solicitar de manera atenta y respetuosa el acceso a información actualizada sobre las 	distancias por carretera entre los municipios del estado de Chiapas, expresadas en kilómetros y, de ser posible, con el detalle de los tramos 	principales o rutas utilizadas.
+
+La presente solicitud tiene como finalidad utilizar dichos datos en el desarrollo de mi tesis de licenciatura en Matemáticas Aplicadas, que lleva por título tentativo: "Comparación entre el algoritmo Google Rank y una alternativa de transporte por drones aplicada a la red de municipios de Chiapas", la cual se realiza en el marco de la Facultad de Ciencias en Física y Matemáticas de la Universidad Autónoma de Chiapas (UNACH).
+
+El objetivo de esta investigación es aplicar herramientas matemáticas de análisis de redes, en particular el algoritmo PageRank de Google, a la red de carreteras del estado, con el fin de evaluar su eficiencia y compararla con una propuesta emergente basada en rutas aéreas mediante drones. Esta comparación busca aportar elementos útiles para el estudio de logística y movilidad en regiones con desafíos geográficos, como el estado de Chiapas.
+
+Agradezco de antemano su colaboración para el fortalecimiento de la investigación científica y académica en nuestra entidad. Me comprometo a hacer uso exclusivo de la información para fines académicos, así como a citar debidamente su origen en la tesis correspondiente.
+
+Sin otro particular, quedo atenta a su amable respuesta y disposición para cualquier aclaración adicional.
+
+Atentamente,
+
+[Firma escaneada]
+Ángela Yaneli Ortiz Díaz
+Estudiante de la Licenciatura en Matemáticas Aplicadas
+Facultad de Ciencias en Física y Matemáticas
+Universidad Autónoma de Chiapas (UNACH)
+Correo electrónico: [tu correo electrónico]
+Teléfono: [tu número de contacto]
+
+Vo. Bo.
+[Firma del director de tesis]
+Mtro. Yofre Hernán García Gómez
+Director de Tesis
+Facultad de Ciencias en Física y Matemáticas
+UNACH
+
+* Generar un repositorio en le drive del correo institucional (Bitácora, los artículos, ponencia)
+
+
+Mapa de cobertura móvil https://coberturamovil.ift.org.mx/
+
+Trabajo de tesis sobre uso de drones: https://www.researchgate.net/publication/358565027_Los_Drones_para_el_Transporte_de_Productos_desde_la_Perspectiva_del_Diseno_Dominante_y_el_Analisis_de_Solicitudes_de_Patentamiento
+
+
+** Revisar el mapa de coberturas, probar todos los tipos de coberturas para encontrar las mas amplias alrededor de los municipios: Copoya
+Real de Bosque
+Terán
+Tutxla Gutiérrrez
+Chiapas de Corzo
+Plan de Ayala
+Berriozábal
+Ciudad Maya
+
+
+## A&T 4 G
+## Flash Mobile 3G
+## movistar 3G=4G
+## Open Ip 2G
+## Telcel 4G
+##Virgin Mobile 3G
+
+son las que cubren mas areas
+** Telcel 4G
+** A&T 4 G
+** movistar 4G
+
+
+
+** Inegi estadistica de vuelos de drones (vuelos)
+
+** Revisar en mapa de google hospitales y clínicas publicas de los lugares 	mencionado antes (lugares de cables)
+** Buscar base de datos de variables climáticas de Chiapas:
+Variable	¿Por qué es importante?	Valores críticos / Recomendados
+Velocidad del viento	Afecta la estabilidad y control del dron	Seguros < 20 km/h (promedio) / < 30 km/h ráfagas
+Ráfagas de viento	Pueden desestabilizar al dron bruscamente	No operar si > 30–35 km/h
+Temperatura	Afecta el rendimiento de la batería	Operable entre 0 °C y 40 °C
+Humedad relativa	Alta humedad = riesgo de condensación en circuitos	Riesgo si > 90%
+Precipitación	La lluvia daña equipos y sensores	No operar con lluvia
+Visibilidad	Necesaria para vuelo visual o sensores ópticos	Mínimo recomendado: 2 km
+Cobertura de nubes	Puede interferir con navegación satelital	Baja cobertura = mejor GPS
+Radiación solar	Afecta sobrecalentamiento del dron (en días muy soleados)	A considerar para mantenimiento y pausas
+
+
+##https://sih.conagua.gob.mx/ base de datos Climatologicas e hidrométricas en Chiapas
+https://meteostat.net/en/place/mx/tuxtla?s=76843&t=2025-05-16/2025-05-23
+
+
+30 de mayo de 2025
+---
+* Generar un repositorio en le drive del correo institucional (Bitácora, los artículos, ponencia)
+
+https://meteostat.net/en/place/mx/tuxtla?s=76843&t=2025-05-16/2025-05-23
+https://sih.conagua.gob.mx/
+
+a) https://colab.research.google.com/drive/1kANPVv3z_X5xVvtgTm7BX_6jws9VrFiA#scrollTo=ivZJVm60ePhz genera el mapa con las distancias obtenidas a traves de ese cálculo
+
+b) hacer un código usando Google maps
+comparar a) y b) el mejor de los dos aplicarle la altitud  https://chatgpt.com/c/6839cce2-ebfc-8004-8ad2-c946881b2639 (opción con python)
+
+Como dibujar esas tres cuberturas de redes como dibujarlas en un mapa
+
+16 de junio de 2025
+---
+
+20 de junio de 2025
+---
+-Subir la bitácora actualizada al GitHub
+-Hacer el código todos los municipios
+
+##queda pendiente subir los códigos a GitHub ya que marca error
+
+02 de julio de 2025
+---
+- detectar variables climáticas que se debe tener en cuenta para trazar ruta de un dron entre dos puntos.
+- PLAN DE TRABAJO
+Aquí tienes una **lista detallada de pasos** para desarrollar un **proyecto factible en Python** que simule rutas de drones de entrega en Chiapas, utilizando datos meteorológicos de los **últimos seis meses** (en particular, viento), y que evalúe el consumo de batería afectado por el viento y la topografía.
+
+---
+
+## ✅ **Nombre del proyecto:**
+
+**Simulación de rutas óptimas para drones de entrega en Chiapas considerando viento y relieve**
+
+---
+
+## 🧭 Fases del proyecto (paso a paso)
+
+---
+
+### **Fase 1: Recolección de datos**
+
+#### 1.1. **Definir puntos de origen y destino**
+
+* Seleccionar 5–10 municipios de Chiapas como nodos (por ejemplo: Tuxtla, San Cristóbal, Comitán, Pijijiapan, Tapachula).
+* Obtener coordenadas GPS de cada uno.
+
+#### 1.2. **Descargar datos de elevación**
+
+* Usar SRTM (Shuttle Radar Topography Mission) o Copernicus.
+* Formato: `.hgt`, `.tif` o cuadrículas raster.
+* Extraer perfiles de altitud para las rutas entre municipios.
+
+#### 1.3. **Obtener datos meteorológicos históricos (6 meses)**
+
+* API sugerida: **OpenWeatherMap** (requiere cuenta gratuita). HACER ESTO, EXPLORAR QUE HAY PARA CHIAPAS, INVESTIGAR SI HAY DATOS DE 6 MESES (O UN AÑO) o toca esperar
+* Tipo de dato: Velocidad y dirección del viento por hora o día.
+* Formato: JSON o CSV.
+* Filtro: Datos solo de municipios seleccionados o rutas intermedias.
+
+---
+
+### **Fase 2: Preprocesamiento de datos**
+
+#### 2.1. **Interpolar rutas entre municipios**
+
+* Generar trayectorias rectas o curvas usando `geopy` o `shapely`.
+
+#### 2.2. **Construir malla de navegación (grafo)**
+
+* Nodos = puntos intermedios entre origen y destino.
+* Aristas = segmentos del trayecto con atributos:
+
+  * Distancia 2D y 3D
+  * Pendiente del terreno
+  * Viento en contra o a favor
+
+#### 2.3. **Calcular viento proyectado sobre cada tramo**
+
+* Convertir velocidad + dirección del viento en vector cartesiano.
+* Proyectar sobre dirección del dron para penalización:
+
+  $$
+  \text{Penalización}_{\text{viento}} = -\vec{v}_w \cdot \hat{d}
+  $$
+
+---
+
+### **Fase 3: Simulación de ruta óptima**
+
+#### 3.1. **Definir función de costo total por tramo**
+
+$$
+\text{Costo}_{\text{tramo}} = \text{Distancia}_{3D} + \alpha \cdot \text{Penalización}_{\text{viento}}
+$$
+
+#### 3.2. **Aplicar algoritmo A\* o Dijkstra**
+
+* Librería recomendada: `networkx`
+* Grafo con costos dinámicos (ajustados por el viento)
+* Obtener ruta óptima para cada día o semana de los 6 meses
+
+---
+
+### **Fase 4: Evaluación de energía**
+
+#### 4.1. **Modelo simple de consumo de batería**
+
+$$
+E = E_0 - \beta \cdot (\text{distancia} + \gamma \cdot \text{viento\_en\_contra})
+$$
+
+* $E_0$: energía inicial (mAh)
+* $\beta$: tasa de consumo por distancia
+* $\gamma$: penalización adicional por viento
+
+#### 4.2. **Comparar consumo para rutas por día**
+
+* Graficar variaciones semanales o mensuales.
+* Determinar si ciertos días no son viables por batería o clima.
+
+---
+
+### **Fase 5: Visualización y animación**
+
+#### 5.1. **Mapa de Chiapas y rutas simuladas**
+
+* Usar `folium` o `plotly` para mostrar rutas en mapa.
+* Colorear rutas según dificultad o viento.
+
+#### 5.2. **Animación de vuelo simulado**
+
+* Simular movimiento del dron a lo largo de la ruta.
+* Librerías: `matplotlib.animation`, `plotly`, `pygame` (opcional).
+
+---
+
+### **Fase 6: Conclusiones y resultados**
+
+#### 6.1. **Resumen de viabilidad de rutas**
+
+* ¿Qué rutas son factibles bajo viento?
+* ¿Qué días o regiones presentan mayor riesgo?
+
+#### 6.2. **Recomendaciones operativas**
+
+* Evitar vuelos en ciertas franjas horarias o temporadas.
+* Rediseñar rutas con menor exposición al viento de montaña.
+
+---
+
+## 📁 Estructura sugerida del proyecto
+
+```
+
+/dron\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_chiapas/
+
+│
+
+├── data/
+
+│   ├── elevacion\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_chiapas.tif
+
+│   ├── viento\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_tuxtla\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_enero\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_junio.csv
+
+│   └── coordenadas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_municipios.csv
+
+│
+
+├── src/
+
+│   ├── descarga\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_datos.py
+
+│   ├── preprocesamiento.py
+
+│   ├── simulacion\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_ruta.py
+
+│   ├── energia.py
+
+│   └── visualizacion.py
+
+│
+
+├── resultados/
+
+│   ├── rutas\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_optimas.html
+
+│   └── grafico\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_consumo\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_bateria.png
+
+│
+
+└── README.md
+
+```
+
+---
+
+## 🛠️ ¿Qué necesitas para empezar?
+
+### Requisitos técnicos:
+
+* Python 3.8+
+* Bibliotecas: `pandas`, `numpy`, `matplotlib`, `folium`, `plotly`, `networkx`, `geopy`, `rasterio`, `requests`
+
+---
+
+Actividades
+-Crear la cuenta OpenWeatherMap y extraer Velocidad y dirección del viento por hora o día. (PENDIENTE)
+-Terminar de extraer las distancias de Chiapas
+-Presentación pasarlo a cuarto con las observaciones anotadas en el documento PE_49_Angela_Yaneli_Ortiz_Diaz.
+
+6 de agosto de 2025
+---
+SRTM buscar la sigla
+programa un código piloto que dure una hora para extraer Velocidad y dirección del viento, para moverse de Tuxtla a Tapachula

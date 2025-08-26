@@ -1,0 +1,33 @@
+# Estudio de caso
+## Adaptación de PageRank a redes territoriales del estado de Chiapas: Un enfoque basado en cadenas de Markov
+::: {.justify}
+En situaciones de emergencia, como desastres naturales o crisis humanitarias, es fundamental contar con mecanismos eficientes para distribuir ayuda y recursos a la población afectada. En regiones como el estado de Chiapas que cuenta con 124 municipios según el INEGI, contando con una geografía montañosa y la dispersión de los municipios dificultan la conectividad, se vuelve especialmente importante identificar puntos estratégicos dentro de la red territorial que puedan facilitar la logística y la respuesta rápida.
+
+Para abordar este desafío, se propone aplicar el algoritmo PageRank, desarrollado por Larry Page y Sergey Brin como parte del motor de búsqueda de Google, con el fin de priorizar municipios según su importancia dentro de la red de transporte intermunicipal. Este algoritmo, basado en un modelo de cadenas de Markov, mide la relevancia de cada nodo (municipio) al simular el recorrido de un "navegante aleatorio" que transita la red con cierta probabilidad de seguir conexiones o saltar aleatoriamente a otro nodo.
+
+En términos prácticos, PageRank estima la probabilidad estacionaria de una cadena de Markov con un número finito de estados describiendo la fracción de tiempo que, en promedio, el sistema permanece en cada estado cuando se observa durante un periodo suficientemente largo (REFERENCIA), lo cual permite identificar aquellos municipios que, por su posición estratégica y conectividad, tienen mayor influencia dentro del sistema territorial. Esta información es clave para diseñar estrategias de distribución de ayuda, optimización de rutas y toma de decisiones en situaciones críticas.
+
+En este estudio de caso, se aplica PageRank a la red territorial del estado de Chiapas, representando los municipios como nodos y las rutas entre ellos como enlaces ponderados por distancia. El objetivo es obtener una clasificación de los municipios más centrales o influyentes, que puedan actuar como puntos clave en escenarios de distribución logística.
+
+## Problemas en la red y solución de PageRank
+En el análisis de una red de nodos, existen dos factores que pueden obstaculizar la convergencia hacia una distribución estacionaria, estos factores son:
+ - los nodos colgantes
+ - subgrafos ansorbentes
+ 
+### Nodos colgantes
+Los nodos colgantes hace referencia a las páginas que no tiene enlaes de salida. En el contexto de una red territorial, este fenómeno se manifiesta en municipios que no tienen conexión con otros municipios. En el caso del estado de Chiapas, no se identificaron nodos colgantes en la red analizada.
+
+El algoritmo PageRank soluciona este problema modificando la matriz de red. Sea $N$ la matriz de red (REFERENCIA), donde cada entrada $n_{ij}$ representa la conexión desde el nodo $j$ hacia el nodo $i$, donde $i,j \in \mathbb{N}$. Para abordar el problema de nodos colgantes, se redefine la matriz de transición $Q$ donde la entrada $i$ que tiene entradas cero (nodos colgantes) se remplaza por $\frac{1}{k}$ donde $k$ es número totales de páginas o municipios, esta corrección nos garantiza que la matriz de trancisión $Q$ sea estocástica.
+
+### Subgrafos absorbentes
+Cuando existen subgrafos absorbentes dentro de la red. Estos corresponden a conjuntos de páginas (o nodos) que están interconectados entre sí pero no tienen enlaces de salida hacia el resto de la red, es decir, hacen un ciclo. En el contexto de la red territorial, esto se representa en los municipios que únicamente estan conectados entres sí, formando un subconjunto cerrado que puede atrapar al navegante en un ciclo sin posibilidad de salir.
+
+Para resolver este problema, los creadores del algoritmo PageRank introdujeron un mecanismo llamado factor de amortiguación. Este consiste en asumir de la red una probabilidad $1-p$ de teletranspotarse aleatoriamente a cualquier otro nodo del grafo. 
+
+Usualmente se toma $p=0.85$, esto significa que en un $85\%$ de los casos el navegante sigue los enklaces y el $15\%$ restante salta aleatoriamente a cualquier otro nodo.
+
+Con los ajustes mencionados se obtene una matriz de trasción modificada que se define como:
+$$P:= p Q +(1-p)A$$
+donde, $A$ es una matriz cuadrada con todas las entradas $\dfrac{1}{k}$ representando una conexión aleatoria uniforme. 
+La matriz resultante $P$ garantiza que el algoritmo funcione correctamente y siempre llegue a una solución estable, debido a que al ser estocástica, asegura que desde cada nodo siempre conserve la probabilidad total en cada pso del proceso; al ser aperiódica, evita que el sistema quede atrapado en ciclos repetitivos; y al ser irreducible, garantiza que todos los nodos estén conectados de alguna forma, permitiendo que eventualmente se pueda llegar a cualquier parte de la red.
+:::

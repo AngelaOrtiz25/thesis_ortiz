@@ -1,0 +1,75 @@
+project:
+  type: book
+  output-dir: docs  
+
+website:
+  favicon: logos/FCFM-UNACH.png
+  reader-mode: true
+  search:
+    location: sidebar
+    type: overlay
+  comments:
+    hypothesis: true
+
+book:
+  title: "Mi Tesis"
+  author: "Tu Nombre"
+  date: "2025-06-17"
+  language: es
+  output-file: "Tesis_AYOD"
+  #image: logofcfm.png
+  cover-image: logos/FCFM-UNACH.png
+  sharing: [twitter, facebook]
+  downloads: [pdf, epub]
+  #favicon: logofcfm.png
+  sidebar:
+    logo: logos/logo_jubileo.png
+    style: floating
+    collapse-level: 2
+    border: true
+    search: true
+  open-graph: true
+  twitter-card: true
+  repo-url: https://github.com/AngelaOrtiz25/thesis
+  repo-actions: [edit, issue, source]
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - introduccion.qmd
+    - objetivo.qmd
+
+    - part: estudio.qmd 
+      chapters:
+        - metodologia.qmd
+
+    - conclusiones.qmd
+    - mapa.qmd
+number-sections: true
+
+format:
+  html:
+    include-after-body: resources.html
+    css: styles.css
+    theme:
+      light: cerulean
+      dark: darkly
+    code-copy: true
+    code-fold: true
+    toc: true
+    number-sections: true
+  pdf:
+    pdf-engine: xelatex
+    lang: es
+    include-in-header:
+      - packa.tex
+    template-partials:
+      - before-body.tex
+    documentclass: scrreprt
+    papersize: us-letter
+    titlegraphic: logos/FCFM-UNACH.png
+    institution: Universidad Autónoma de Chiapas
+    email: angela.ortiz69@unach.mx
+    cover-image: logos/FCFM-UNACH.png
+    editor: visual
+    epub: 
+    output: "Tesis_AYOD"
